@@ -1,0 +1,403 @@
+
+/*--------------------- html --------------------*/
+html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*--------------------- body --------------------*/
+body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    background: url(back2.jpg) fixed no-repeat center;
+    background-size: cover;
+}
+/*--------------------- glober ------------------*/
+body, p, h1, h2, h3, h4, table, td, th, ul, ol, textarea, input {
+    font-family: verdana,helvetica,arial,sans-serif;
+}
+
+h1 {
+    font-size: 24px;
+    margin-top: 0;
+    font-weight: normal;
+}
+
+h2 {
+    font-size: 22px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: normal;
+}
+
+h4 {
+    font-size: 18px;
+}
+
+h5 {
+    font-size: 16px;
+}
+
+h6 {
+    font-size: 14px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    background-color: transparent;
+    color: #000000;
+}
+
+a:link, a:visited {
+    color: #cacaca;
+    text-decoration: none;
+}
+
+a:hover, a:active {
+    color: #ff4800;
+    text-decoration: none;
+}
+
+img {
+    border-radius: 10px 0;
+    border: 2px solid #FFF;
+}
+
+/*--------------------- nav ---------------------*/
+nav {
+    padding-top: .7%;
+    padding-bottom: .7%;
+    margin-top: 1%;
+    background: #000;
+    height: 20px;
+    width: 100%;
+    color: #cacaca;
+    z-index: 1000;
+}
+
+    nav section {
+        z-index: 1000;
+    }
+
+section.left {
+    display: inline;
+    float: left;
+    word-spacing: 10px;
+    padding-left: 10px;
+}
+
+section.dropDownContent {
+    display: inline;
+    word-spacing: 10px;
+}
+
+section.right {
+    display: inline;
+    float: right;
+    word-spacing: 5px;
+    padding-right: 10px;
+}
+
+section.dropDown {
+    display: none;
+    background-color: #000;
+    width: 26%;
+    word-spacing: normal;
+    position: absolute;
+    padding-left: 2%;
+    padding-top: .5%;
+    margin-left: -1%;
+    opacity: 0;
+}
+
+section.dropDownContent:hover {
+    display: inline-block;
+}
+
+    section.dropDownContent:hover > section.dropDown {
+        display: block;
+        opacity: 1;
+    }
+
+section.dropDown p {
+    -webkit-transition: opacity .5s ease-in;
+    -moz-transition: opacity 1s;
+    opacity: 0.3;
+}
+
+section.dropDown:hover p {
+    opacity: 1;
+}
+
+section.dropDown a:hover {
+    text-decoration: underline;
+}
+
+section.dropDown img {
+    float: right;
+    padding-right: 3%;
+    border-radius: 0;
+    border: 0;
+}
+
+snap.hovershowimage {
+    float: right;
+    margin-right: -133px;
+    background-color: black;
+    border-radius: 100% 10px 10px 100%;
+    padding: 3%;
+    margin-top: -2%;
+    width: 83px;
+    color: #FFF;
+    -webkit-transition: opacity .5s;
+    -moz-transition: opacity .5s;
+    transition: opacity .5s;
+    opacity: 0;
+}
+
+a.gallery:hover snap.hovershowimage {
+    opacity: 1;
+}
+
+
+
+/*--------------------- main --------------------*/
+/*------------ glober ------------*/
+main {
+    width: 98%;
+    margin-left: 1%;
+    margin-top: 1%;
+    padding-top: 1%;
+    padding-bottom: 2%;
+    box-shadow: 0 0 20px 3px #d3d3d3, inset 2px 2px 3px #999, inset -2px -2px 3px #999;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 20px 0;
+}
+
+nav.secnav {
+    background-color: #666;
+    border-radius: 15px 0;
+    width: 97%;
+    margin-left: 1%;
+    padding-left: 1%;
+    font-size: small;
+    height: 16px;
+}
+
+    nav.secnav a {
+        color: #FFF;
+    }
+
+        nav.secnav a:hover {
+            text-decoration: underline;
+        }
+
+/*section.content img,section.textcontent embed{height:200px;width:200px; margin:10px; margin-left:20px;box-shadow: 0 0 20px 3px #000000, inset 2px 2px 3px #000, inset -2px -2px 3px #000;}
+section.textcontent embed,section.textcontent img{height:200px;width:300px;}*/
+
+a.top:hover {
+    color: #F00;
+    text-decoration: underline;
+}
+/*------------ main page ---------*/
+main.mainpage {
+    box-shadow: none;
+    padding: 0;
+}
+
+/*------------ games & console-------------*/
+main.games img, main.games embed, main.consoles img, main.consoles embed {
+    float: right;
+    height: 200px;
+    width: 300px;
+    margin: 10px 10px 10px 20px;
+    box-shadow: 0 0 20px 3px #000000, inset 2px 2px 3px #000, inset -2px -2px 3px #000;
+}
+
+    main.games img.showimage, main.consoles img.showimage {
+        float: none;
+        height: 24px;
+        width: 24px;
+        margin-left: 20px;
+        box-shadow: 0 0 20px 3px #000000, inset 2px 2px 3px #000, inset -2px -2px 3px #000;
+    }
+
+main.games section.textcontent, main.consoles section.textcontent {
+    margin: 10px;
+}
+
+main.games h1, main.consoles h1 {
+    text-decoration: underline;
+}
+
+main.games a.top, main.consoles a.top {
+    margin-right: 1%;
+    padding: 1%;
+    box-shadow: 0 0 20px 3px #d3d3d3, inset 2px 2px 3px #999, inset -2px -2px 3px #999;
+    background-color: rgba(255, 255, 255, 0.75);
+    border-radius: 20px 0;
+    color: black;
+    float: right;
+}
+
+    main.games a.top:hover, main.consoles a.top:hover {
+        text-decoration: underline;
+        color: #f00;
+    }
+/*------------ gallery ------------*/
+main.gallery a.top {
+    color: #000;
+    margin-top: 20%;
+    margin-right: 2%;
+    text-align: right;
+    box-shadow: 0 0 20px 3px #d3d3d3, inset 2px 2px 3px #999, inset -2px -2px 3px #999;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px 0;
+    padding: 5px;
+    margin-left: 90%;
+}
+
+main.gallery img {
+    height: 200px;
+    width: 200px;
+    margin: 10px 10px 10px 20px;
+    box-shadow: 0 0 20px 3px #000000, inset 2px 2px 3px #000, inset -2px -2px 3px #000;
+    -webkit-transition: -webkit-transform .5s ease;
+    -moz-transition: -moz-transform .5s ease;
+    transition: transform .5s ease;
+}
+
+    main.gallery img:hover {
+        -webkit-transform: scale(1.1);
+        -moz-transform: scale(1.1);
+        transform: scale(1.1);
+    }
+
+main.gallery h1 {
+    text-decoration: underline;
+}
+
+/*------------ comparison ------------*/
+main.comparison table {
+    margin: 10px;
+    width: 98%;
+}
+
+    main.comparison table th {
+        text-decoration: underline;
+    }
+
+    main.comparison table tr:nth-child(2n+2) {
+        background: rgba(0, 112, 255, 0.3);
+    }
+
+    main.comparison table tr:nth-child(2n+1) {
+        background: rgba(90, 81, 81, 0.3);
+    }
+
+    main.comparison table td {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    main.comparison table tr.head {
+        background-color: rgba(0, 20, 255, 0.5);
+    }
+
+    main.comparison table td.head {
+        background-color: rgba(10, 255, 0, 0.31);
+    }
+
+footer.comparison {
+    margin-top: 5%;
+}
+
+/*------------ forum ------------*/
+main.forum input {
+    background-color: rgba(255, 255, 255, 0.75);
+}
+
+main.forum button {
+}
+/*------------ ref ------------*/
+main.ref {
+}
+/*------------ about -------------*/
+main.about {
+    height: 70%;
+    overflow: hidden;
+}
+
+    main.about article {
+        height: 100%;
+    }
+
+    main.about h1 {
+        font-size: 400%;
+        text-decoration: underline;
+    }
+
+    main.about h2 {
+        font-size: 300%;
+        text-decoration: underline;
+    }
+
+    main.about h3 {
+        font-size: 200%;
+    }
+
+
+/*--------------------- footer ------------------*/
+footer {
+    width: 100%;
+    margin: 0;
+    color: #909090;
+    font-size: 11px;
+    text-align: center;
+    padding: 0;
+}
+
+div.footer {
+    word-spacing: 6px;
+    font-size: 10px;
+    background-color: #d3d3d3;
+    border: 1px solid #d3d3d3;
+    width: 99.5%;
+    padding: 0;
+    margin: 0;
+}
+
+#footerText {
+    padding-top: 13px;
+    clear: both;
+    color: #555555;
+    margin-right: 50px;
+}
+
+footer a:link, footer a:visited {
+    text-decoration: none;
+    color: #404040;
+    background-color: transparent;
+}
+
+footer a:hover, footer a:active {
+    text-decoration: underline;
+    color: #404040;
+    background-color: transparent;
+}
+
+footer.mainpage {
+    padding-top: 47%;
+}
+
+footer.ref {
+    padding-top: 27%;
+}

@@ -1,0 +1,157 @@
+<html>
+<head>
+    <title>ABOUT</title>
+    <link href="files/main_Page.css" rel="stylesheet">
+</head>
+<body>
+    <nav>
+        <section class="left">
+            <a href="main_Page.html">Home</a> |
+
+            <section class="dropDownContent">
+                <a href="Consoles.html" style="word-spacing:normal;">Gaming Consoles</a> |
+                <section class="dropDown">
+                    <p>
+                        <a href="Consoles.html#ps4">PS 4  </a>
+                        <a class="gallery" href="Consolesgallery.html#ps4">
+                            <img src="files/showimage" class="showimage">
+                            <snap class="hovershowimage">For Image</snap>
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="Consoles.html#xone">X Box One</a>
+                        <a class="gallery" href="Consolesgallery.html#xone">
+                            <img src="files/showimage" class="showimage">
+                            <snap class="hovershowimage">For Image</snap>
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="Consoles.html#x360">X Box 360</a>
+                        <a class="gallery" href="Consolesgallery.html#x360">
+                            <img src="files/showimage" class="showimage">
+                            <snap class="hovershowimage">For Image</snap>
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="Consoles.html#steam">Steam Controller</a>
+                        <a class="gallery" href="Consolesgallery.html#steam">
+                            <img src="files/showimage" class="showimage">
+                            <snap class="hovershowimage">For Image</snap>
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="Consoles.html#vita">VITA</a>
+                        <a class="gallery" href="Consolesgallery.html#vita">
+                            <img src="files/showimage" class="showimage">
+                            <snap class="hovershowimage">For Image</snap>
+                        </a>
+                    </p>
+                </section>
+            </section>
+
+            <section class="dropDownContent">
+                <a href="games.html">Games</a>
+                <section class="dropDown">
+                    <p>
+                        <a href="games.html#assassins">Assassins Creed Black Flag</a>
+                        <a class="gallery" href="gamesgallery.html#assassins">
+                            <img src="files/showimage" class="showimage">
+                            <snap class="hovershowimage">For Image</snap>
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="games.html#fifa14">FIFA 14</a>
+                        <a class="gallery" href="gamesgallery.html#fifa14">
+                            <img src="files/showimage" class="showimage">
+                            <snap class="hovershowimage">For Image</snap>
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="games.html#destiny">Destiny</a>
+                        <a class="gallery" href="gamesgallery.html#destiny">
+                            <img src="files/showimage" class="showimage">
+                            <snap class="hovershowimage">For Image</snap>
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="games.html#battleship">Battle Ship 4</a>
+                        <a class="gallery" href="gamesgallery.html#battleship">
+                            <img src="files/showimage" class="showimage">
+                            <snap class="hovershowimage">For Image</snap>
+                        </a>
+                    </p>
+
+                    <p>
+                        <a href="games.html#killzone">Kill Zone Shadow Fall</a>
+                        <a class="gallery" href="gamesgallery.html#killzone">
+                            <img src="files/showimage" class="showimage">
+                            <snap class="hovershowimage">For Image</snap>
+                        </a>
+                    </p>
+                </section>
+            </section>
+
+        </section>
+
+        <section class="right">
+            <a href="forum.html" target="_blank">FORUM</a> |
+            <a href="about.html">ABOUT</a> |
+            <a name="top"><a href="#bottom">BOTTOM</a></a>
+        </section>
+    </nav>
+    <main id="mainAbout" class="about">
+        <article id="toMarquee">
+            <center>
+                <table align="center">
+                    <tr><td colspan="2"><h1><u>Computer project</u></h1></td></tr>
+                    <tr><td colspan="2"><h2><u>Created by:-</u></h2></td></tr>
+                    <tr><td colspan="2"><h3>Vivswan Shah</h3></td></tr>
+                    <tr><td colspan="2"><h4><u>Class</u></h4></td></tr>
+                    <tr><td colspan="2"><h4>10<sup>th</sup> D</h4></td></tr>
+                    <tr><td colspan="2"><h4><u>Roll no.</u></h4></td></tr>
+                    <tr><td><h4>35</h4></td></tr>
+                    <tr><td colspan="2"><h4><u>School</u></h4></td></tr>
+                    <tr><td colspan="2"><h4>Lucknow Public School</h4></td></tr>
+                </table>
+            </center>
+        </article>
+    </main>
+    <footer>
+        <div class="footer">
+            <a href="main_Page.html" target="_top">HOME</a> |
+            <a name="bottom"><a href="#top" target="_top">TOP</a></a> |
+            <a href="forum.html" target="_blank">FORUM</a> |
+            <a href="ref.html" target="_top">REFERENCE</a> |
+            <a href="about.html" target="_top">ABOUT</a>
+        </div>
+        <div id="footerText">
+            While using this site, you agree to have read and accepted our terms of use and privacy policy.<br>
+            Copyright 1999-2013 by Refuses Data. All Rights Reserved.<br><br>
+        </div>
+        <center>
+            xxxxxxxxxxxxxxxxxxxxx
+            <hr width="50%">
+            xxxxxxxxxxxxxxxxxxxxx
+        </center>
+    </footer>
+</body>
+</html>
+<script>
+    function functionToMarquee() {
+        document.getElementById('toMarquee').style.marginTop = document.getElementById('mainAbout').clientHeight + 'px';
+        var TheInterval = setInterval(function () {
+            document.getElementById('toMarquee').style.marginTop = ((document.getElementById('toMarquee').style.marginTop.indexOf('-') == -1 ? Number(document.getElementById('toMarquee').style.marginTop.replace('-', '').replace('px', '')) : -Number(document.getElementById('toMarquee').style.marginTop.replace('-', '').replace('px', ''))) - 2) + 'px';
+            if (-(document.getElementById('toMarquee').style.marginTop.indexOf('-') == -1 ? Number(document.getElementById('toMarquee').style.marginTop.replace('-', '').replace('px', '')) : -Number(document.getElementById('toMarquee').style.marginTop.replace('-', '').replace('px', ''))) > document.getElementById('toMarquee').children[0].clientHeight) {
+                document.getElementById('toMarquee').style.marginTop = document.getElementById('mainAbout').clientHeight + 'px';
+            }
+        }, 50);
+    }
+    functionToMarquee();
+</script>
