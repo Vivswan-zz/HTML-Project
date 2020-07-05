@@ -133,7 +133,7 @@
         </div>
         <div id="footerText">
             While using this site, you agree to have read and accepted our terms of use and privacy policy.<br>
-            Copyright 1999-2013 by Refuses Data. All Rights Reserved.<br><br>
+            Copyright 2010-2100 by Vivswan Shah. All Rights Reserved.<br><br>
         </div>
         <center>
             xxxxxxxxxxxxxxxxxxxxx
@@ -147,8 +147,8 @@
     function functionToMarquee() {
         document.getElementById('toMarquee').style.marginTop = document.getElementById('mainAbout').clientHeight + 'px';
         var TheInterval = setInterval(function () {
-            document.getElementById('toMarquee').style.marginTop = ((document.getElementById('toMarquee').style.marginTop.indexOf('-') == -1 ? Number(document.getElementById('toMarquee').style.marginTop.replace('-', '').replace('px', '')) : -Number(document.getElementById('toMarquee').style.marginTop.replace('-', '').replace('px', ''))) - 2) + 'px';
-            if (-(document.getElementById('toMarquee').style.marginTop.indexOf('-') == -1 ? Number(document.getElementById('toMarquee').style.marginTop.replace('-', '').replace('px', '')) : -Number(document.getElementById('toMarquee').style.marginTop.replace('-', '').replace('px', ''))) > document.getElementById('toMarquee').children[0].clientHeight) {
+            document.getElementById('toMarquee').style.marginTop = ((document.getElementById('toMarquee').style.marginTop.indexOf('-') === -1 ? Number(document.getElementById('toMarquee').style.marginTop.replace('-', '').replace('px', '')) : -Number(document.getElementById('toMarquee').style.marginTop.replace('-', '').replace('px', ''))) - 2) + 'px';
+            if (-(document.getElementById('toMarquee').style.marginTop.indexOf('-') === -1 ? Number(document.getElementById('toMarquee').style.marginTop.replace('-', '').replace('px', '')) : -Number(document.getElementById('toMarquee').style.marginTop.replace('-', '').replace('px', ''))) > document.getElementById('toMarquee').children[0].clientHeight) {
                 document.getElementById('toMarquee').style.marginTop = document.getElementById('mainAbout').clientHeight + 'px';
             }
         }, 50);
